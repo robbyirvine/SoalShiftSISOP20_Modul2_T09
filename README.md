@@ -8,8 +8,11 @@ Nama Anggota:
 Buatlah program C yang menyerupai crontab untuk menjalankan script bash dengan ketentuan sebagai berikut:
 
 Ketentuan:
+
   A. Program menerima 4 argumen berupa :
+  
   Ketentuan A (i, ii, iii dan iv)
+  
     i. Detik: 0-59 atau * (any value)
     ii. Menit: 0-59 atau * (any value)
     iii. Jam: 0-23 atau * (any value)
