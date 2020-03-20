@@ -149,4 +149,25 @@ if(argc != 5){
    	printf("error");
    	return 0;
 ```
-- Sesuai dengan yang diminta, kita harus memasukkan 5 argumen (1 argumen diawal untuk memanggil program yang dibuat. Selanjutnya adalah sesuai dengan detik, menit, jam dan nama file yang ingin dijalankan). Apabila argumen yang diinputkan ```if(argc !=5)``` maka akan muncul ```printf"error)``` 
+- Sesuai dengan yang diminta, kita harus memasukkan 5 argumen (1 argumen diawal untuk memanggil program yang dibuat. Selanjutnya adalah sesuai dengan detik, menit, jam dan nama file yang ingin dijalankan). Apabila argumen yang diinputkan ```if(argc !=5)``` maka akan muncul ```printf{"error")``` 
+
+``` 
+d = 0;
+m = 0;
+j = 0;
+```
+- inisiasi awal argumen dari detik ```d```, menit ```m```, jam ```j```. 
+
+``` 
+if(strcmp(argv[1], "*") != 0){ s = atoi(argv[1]); if(s > 59 || s < 0){printf("tidak sesuai detik");return 0;}} 
+   if(strcmp(argv[2], "*") != 0){ s = atoi(argv[2]); if(s > 59 || s < 0){printf("tidak sesuai menit");return 0;}} 
+   if(strcmp(argv[3], "*") != 0){ s = atoi(argv[3]); if(s > 23 || s < 0){printf("tidak sesuai jam");return 0;}} 
+```
+- Selanjutnya adalah untuk menjalankan program. Untuk ```argv[1]``` yaitu untuk mendapatkan nilai detik. menggunakan perintah ```strcmp``` adalah perintah yang berfungsi untuk membandingkan dua buah string. Sesuai dengan perintah, input bisa berupa ```detik: 0-59``` atau ```* (any value)```. 
+``` atoi``` berfungsi untuk mengonversi nilai string menjadi bilangan bertipe integer. Range yang diminta untuk detik yaitu ```if(s > 59 || s < 0)``` dari 0-59. ```printf("tidak sesuai detik")``` akan menampilkan **tidak sesuai detik** apabila input yang dimasukkan tidak sesuai range yang diberikan. 
+
+- Untuk ```argv[2]``` yaitu untuk mendapatkan nilai menit. menggunakan perintah ```strcmp``` adalah perintah yang berfungsi untuk membandingkan dua buah string. Sesuai dengan perintah, input bisa berupa ```menit: 0-59``` atau ```* (any value)```. 
+``` atoi``` berfungsi untuk mengonversi nilai string menjadi bilangan bertipe integer. Range yang diminta untuk detik yaitu ```if(m > 59 || m < 0)``` dari 0-59. ```printf("tidak sesuai menit")``` akan menampilkan **tidak sesuai detik** apabila input yang dimasukkan tidak sesuai range yang diberikan. 
+
+- Untuk ```argv[3]``` yaitu untuk mendapatkan nilai jam. menggunakan perintah ```strcmp``` adalah perintah yang berfungsi untuk membandingkan dua buah string. Sesuai dengan perintah, input bisa berupa ```jam: 0-23``` atau ```* (any value)```. 
+``` atoi``` berfungsi untuk mengonversi nilai string menjadi bilangan bertipe integer. Range yang diminta untuk detik yaitu ```if(j > 23 || j < 0)``` dari 0-23. ```printf("tidak sesuai detik")``` akan menampilkan **tidak sesuai detik** apabila input yang dimasukkan tidak sesuai range yang diberikan. 
