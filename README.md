@@ -123,3 +123,20 @@ pid_t pid, sid;
 
 ``` umask(0); ``` 
 - Memiliki fungsi yaitu untuk mengatur akses permission agar file bisa ditulis dan dibaca. 
+
+``` sid = setsid();
+ if (sid < 0) {
+   exit(EXIT_FAILURE);
+```
+- Memiliki fungsi membuat **Unique Session ID (SID)** untuk mendapatkan **SID** menggunakan perintah ```setsid()```. perintah itu akan menjalankan perintah ```fork()```. 
+``` if ((chdir("/home/shempaque/Documents/Linux2")) < 0) {
+  exit(EXIT_FAILURE);
+```
+- Selanjutnya adalah memindahkan proses Daemon kesuatu directory yang ada. Untuk mengubahnya menggunakan perintah ```chdir()```. 
+
+```close(STDIN_FILENO);
+ close(STDOUT_FILENO);
+ close(STDERR_FILENO);
+```
+- Proses Daemon adalah proses yang berjalan di background secara otomatis. Oleh karena itu harus menutup file yang tidak diperlukan agar tidak menggunakan terminal yang digunakan. 
+``` 
