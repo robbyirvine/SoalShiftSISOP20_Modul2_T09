@@ -101,3 +101,17 @@ int main(int argc, char** argv) {
 ```
 - ``` int main(int argc, char** argv``` adalah main fungsi dari program. fungsi perintah  ```argc``` sebagai parameter bertipe int dan berfungsi untuk menunjukkan banyaknya parameter yang digunakan. 
 Sedangkan untuk ```argv``` berfungsi untuk menyimpan parameter apa saja yang digunakan (dalam bentuk array). 
+- selanjutnya adalah membuat **Daemon**. Pembuatan daemon sesuai dengan modul yang telah dipublikasikan yaitu: 
+``` 
+pid_t pid, sid;
+   int s,m,h;
+
+   pid = fork();
+
+ if (pid < 0) {
+   exit(EXIT_FAILURE);
+ }
+
+ if (pid > 0) {
+   exit(EXIT_SUCCESS);
+ }
