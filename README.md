@@ -122,4 +122,4 @@ pid_t pid, sid;
 - Memiliki fungsi yaitu untuk membuat sebuah parent process dan memunculkan child process dengan melakukan ```fork()```. Kemudian membunuh parent process agar sistem mengira proses telah selesai. 
 
 ``` umask(0); ``` 
-- Memiliki fungsi yaitu untuk mengatur akses permission
+- Memiliki fungsi yaitu untuk mengatur akses permission agar file bisa ditulis dan dibaca. 
