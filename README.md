@@ -149,7 +149,7 @@ if(argc != 5){
    	printf("error");
    	return 0;
 ```
-- Sesuai dengan yang diminta, kita harus memasukkan 5 argumen (1 argumen diawal untuk memanggil program yang dibuat. Selanjutnya adalah sesuai dengan detik, menit, jam dan nama file yang ingin dijalankan). Apabila argumen yang diinputkan ```if(argc !=5)``` maka akan muncul ```printf{"error")``` 
+- Sesuai dengan yang diminta, kita harus memasukkan 5 argumen (1 argumen diawal untuk memanggil program yang dibuat. Selanjutnya adalah sesuai dengan detik, menit, jam dan nama file yang ingin dijalankan). Apabila argumen yang diinputkan ```if(argc !=5)``` maka akan muncul **error**.  
 
 ``` 
 d = 0;
