@@ -198,4 +198,4 @@ isi dari ```file1.sh``` adalah:
 #!/usr/bin/env bash
 date >> date.txt
 ```
-- 
+- Fungsi ```while(1)``` akan memberhentikan program sejenak ```sleep(1)``` selama 1 detik. Setelah itu program akan melakukan _looping_ kembali. 
