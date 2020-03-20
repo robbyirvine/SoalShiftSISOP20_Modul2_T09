@@ -160,8 +160,8 @@ j = 0;
 
 ``` 
 if(strcmp(argv[1], "*") != 0){ s = atoi(argv[1]); if(s > 59 || s < 0){printf("tidak sesuai detik");return 0;}} 
-   if(strcmp(argv[2], "*") != 0){ s = atoi(argv[2]); if(s > 59 || s < 0){printf("tidak sesuai menit");return 0;}} 
-   if(strcmp(argv[3], "*") != 0){ s = atoi(argv[3]); if(s > 23 || s < 0){printf("tidak sesuai jam");return 0;}} 
+if(strcmp(argv[2], "*") != 0){ s = atoi(argv[2]); if(s > 59 || s < 0){printf("tidak sesuai menit");return 0;}} 
+if(strcmp(argv[3], "*") != 0){ s = atoi(argv[3]); if(s > 23 || s < 0){printf("tidak sesuai jam");return 0;}} 
 ```
 - Selanjutnya adalah untuk menjalankan program. Untuk ```argv[1]``` yaitu untuk mendapatkan nilai detik. menggunakan perintah ```strcmp``` adalah perintah yang berfungsi untuk membandingkan dua buah string. Sesuai dengan perintah, input bisa berupa ```detik: 0-59``` atau ```* (any value)```. 
 ``` atoi``` berfungsi untuk mengonversi nilai string menjadi bilangan bertipe integer. Range yang diminta untuk detik yaitu ```if(s > 59 || s < 0)``` dari 0-59. ```printf("tidak sesuai detik")``` akan menampilkan **tidak sesuai detik** apabila input yang dimasukkan tidak sesuai range yang diberikan. 
