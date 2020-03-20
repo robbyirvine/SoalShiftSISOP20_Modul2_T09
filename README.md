@@ -97,4 +97,7 @@ int main(int argc, char** argv) {
    	}
    }
 	   }
-   }
+   } 
+```
+- ``` int main(int argc, char** argv``` adalah main fungsi dari program. fungsi perintah  ```argc``` sebagai parameter bertipe int dan berfungsi untuk menunjukkan banyaknya parameter yang digunakan. 
+Sedangkan untuk ```argv``` berfungsi untuk menyimpan parameter apa saja yang digunakan (dalam bentuk array). 
