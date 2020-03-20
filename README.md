@@ -140,4 +140,6 @@ close(STDOUT_FILENO);
 close(STDERR_FILENO);
 ```
 - Proses Daemon adalah proses yang berjalan di background secara otomatis. Oleh karena itu harus menutup file yang tidak diperlukan agar tidak menggunakan terminal yang digunakan. 
-``` 
+```STDIN``` (standar input) berfungsi untuk menutup/ mencegah membaca data dari I/O.
+```STDOUT``` (standar output) berfungsi untuk menutup/mencegah menampilkan I/O ke layar.
+```STDERR``` (standar error) berfungsi untuk menutup/mecegah menampilkan pesan error ke layar. 
