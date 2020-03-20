@@ -184,3 +184,18 @@ ptm = localtime(at);
 - Perintah ```time_t t;``` untuk menyimpan waktu saat ini dalam variabel t. 
 - Perintah ```struct tm* ptm``` untuk melakukan pointer ke ```ptm``` yang berisikan localtime yang akan mengonversi nilai dalam variabel t ke waktu yang digunakan sistem (localtime). 
 	
+```
+if((h == ptm->tm_hour || h == 0) && (m == ptm->tm_min || m == 0) && (s == ptm->tm_sec || s == 0)) {
+if (fork()==0)
+execl("/bin/bash", "bash", argv[5], NULL);)
+sleep(1);
+``` 
+- perintah ```if((h == ptm->tm_hour || h == 0) && (m == ptm->tm_min || m == 0) && (s == ptm->tm_sec || s == 0))``` berfungsi untuk menyamakan detik, menit, dan jam yang diinputkan oleh user dengan detik, menit, dan jam pada saat program dijalankan. lalu Daemon akan berjalan sesuai dengan perintah yang telah diinputkan. 
+- apabila kondisi perintah telah sesuai, ```execl("/bin/bash", "bash", argv[5], NULL);)```
+maka program akan menjalankan bash script pada file yang telah dibuat. Pada kesempatan kali ini menggunakan file ```file1.sh``` 
+isi dari ```file1.sh``` adalah: 
+```
+#!/usr/bin/env bash
+date >> date.txt
+```
+- 
