@@ -116,7 +116,6 @@ pid_t pid, sid;
    exit(EXIT_SUCCESS);
    
    }
-   
    ```
    
 - Memiliki fungsi yaitu untuk membuat sebuah parent process dan memunculkan child process dengan melakukan ```fork()```. Kemudian membunuh parent process agar sistem mengira proses telah selesai. 
