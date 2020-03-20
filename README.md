@@ -171,3 +171,16 @@ if(strcmp(argv[3], "*") != 0){ s = atoi(argv[3]); if(s > 23 || s < 0){printf("ti
 
 - Untuk ```argv[3]``` yaitu untuk mendapatkan nilai jam. menggunakan perintah ```strcmp``` adalah perintah yang berfungsi untuk membandingkan dua buah string. Sesuai dengan perintah, input bisa berupa ```jam: 0-23``` atau ```* (any value)```. 
 ``` atoi``` berfungsi untuk mengonversi nilai string menjadi bilangan bertipe integer. Range yang diminta untuk detik yaitu ```if(j > 23 || j < 0)``` dari 0-23. ```printf("tidak sesuai detik")``` akan menampilkan **tidak sesuai jam** apabila input yang dimasukkan tidak sesuai range yang diberikan. 
+
+```
+while(1){
+time_t t;
+struct tm* ptm;
+   	
+t= time(NULL);
+ptm = localtime(at);
+```
+- Pada ```while(1)``` adalah perintah looping karena daemon akan bekerja dalam waktu tertentu. 
+- Perintah ```time_t t;``` untuk menyimpan waktu saat ini dalam variabel t. 
+- Perintah ```struct tm* ptm``` untuk melakukan pointer ke ```ptm``` yang berisikan localtime yang akan mengonversi nilai dalam variabel t ke waktu yang digunakan sistem (localtime). 
+	
