@@ -143,3 +143,10 @@ close(STDERR_FILENO);
 ```STDIN``` (standar input) berfungsi untuk menutup/ mencegah membaca data dari I/O.
 ```STDOUT``` (standar output) berfungsi untuk menutup/mencegah menampilkan I/O ke layar.
 ```STDERR``` (standar error) berfungsi untuk menutup/mecegah menampilkan pesan error ke layar. 
+
+``` 
+if(argc != 5){
+   	printf("error");
+   	return 0;
+```
+- Sesuai dengan yang diminta, kita harus memasukkan 5 argumen (1 argumen diawal untuk memanggil program yang dibuat. Selanjutnya adalah sesuai dengan detik, menit, jam dan nama file yang ingin dijalankan). Apabila argumen yang diinputkan ```if(argc !=5)``` maka akan muncul ```printf"error)``` 
